@@ -3,3 +3,176 @@
 @media(max-width:760px){.shell{width:min(100% - 40px,var(--shell))}.section-pad{padding:76px 0}.site-header{position:absolute}.nav{height:70px}.menu-toggle{display:flex;flex-direction:column;gap:5px;padding:10px;border:1px solid rgba(255,255,255,.2);border-radius:6px}.menu-toggle span{display:block;width:18px;height:1px;background:#fff}.nav-links{position:absolute;top:70px;left:20px;right:20px;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px;border:1px solid rgba(255,255,255,.14);border-radius:9px;background:#16223b;box-shadow:0 15px 35px rgba(0,0,0,.25)}.nav-links.is-open{display:flex}.nav-links a{padding:12px 10px}.nav-contact{text-align:center;margin-top:5px}.hero{min-height:auto;padding:123px 0 35px}.hero-grid{grid-template-columns:1fr;gap:48px}.hero-intro{margin-top:32px}.hero h1{font-size:76px;letter-spacing:-5px}.hero-lead{font-size:20px}.hero-panel{justify-self:start;max-width:520px}.hero-bottom{margin-top:43px}.intro-grid,.education-grid{grid-template-columns:1fr;gap:27px}.intro-content h2,.section-title{font-size:42px;letter-spacing:-2px}.intro-large{font-size:18px}.intro-details{grid-template-columns:1fr;gap:10px}.section-heading{align-items:flex-start;gap:20px}.experience-card{margin-left:0}.achievement-grid{grid-template-columns:1fr;gap:18px}.experience-top h3{font-size:24px}.project-card{grid-template-columns:1fr}.project-visual{min-height:320px}.voyagr-map{min-height:320px}.project-content{padding:30px 25px}.skills-grid{grid-template-columns:1fr;gap:35px}.skills-intro .section-title{font-size:43px}.recommendation-grid{grid-template-columns:1fr}.recommendations-section .section-title{font-size:39px}.education-heading h2{font-size:27px}.contact-wrap h2{font-size:60px}.contact-bottom{margin-top:65px;flex-wrap:wrap}.footer-inner{flex-wrap:wrap;justify-content:space-between}.footer-inner span:nth-child(2){display:none}}
 @media(max-width:430px){.shell{width:calc(100% - 34px)}.hero h1{font-size:67px}.hero-panel{padding:19px}.panel-orbit{height:190px}.metric-grid{gap:15px}.section-heading{display:block}.section-aside{text-align:left;margin-top:18px}.intro-content h2,.section-title{font-size:37px}.date-chip{font-size:8px;padding:6px 7px}.experience-top{gap:10px}.education-heading h2{font-size:23px}.cpi{width:75px;height:75px;flex:0 0 75px}.education-achievements{gap:10px}.contact-wrap h2{font-size:52px;letter-spacing:-3px}.contact-bottom{gap:12px}.contact-bottom span{display:none}.hero-actions .button{flex:1}.contact-actions .button{flex:1;padding-inline:11px}.project-content{padding:26px 20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* -------------------------------------------------------------------------
+   Dark portfolio refresh — rounded type, softer contrast, larger body copy
+   ------------------------------------------------------------------------- */
+:root{
+  --ink:#eaf0fb;
+  --muted:#a8b4c9;
+  --paper:#0a1120;
+  --white:#111c30;
+  --navy:#080e1a;
+  --navy-2:#14223b;
+  --line:#293750;
+  --blue:#9db5ff;
+  --blue-strong:#9bb2ff;
+  --sans:"Nunito Sans",sans-serif;
+  --display:"Outfit",sans-serif;
+  color-scheme:dark;
+}
+html{background:#0a1120}
+body{background:#0a1120;color:#eaf0fb;font-family:var(--sans);font-size:16px;line-height:1.72}
+h1,h2,h3,h4,.brand,.button,.metric strong,.hero-lead,.intro-large,.project-description,.achievement strong,.skill-row h3{font-family:var(--display)}
+p,li,blockquote,small{font-family:var(--sans)}
+a{transition:color .2s ease}
+.site-header{background:linear-gradient(180deg,rgba(8,14,26,.58),transparent)}
+.nav{border-color:rgba(185,202,238,.13)}
+.nav-links{color:#bdc9dc;font-size:13px}
+.nav-links a:hover{color:#a9bcff}
+.nav-contact{border-color:#3b4b6b}
+.brand-mark{border-color:#536585}
+.menu-toggle{background:rgba(255,255,255,.04)}
+.hero{background:radial-gradient(ellipse at 76% 38%,rgba(76,105,190,.22),transparent 36%),linear-gradient(125deg,#080e1b 0%,#111e36 57%,#0b1426 100%)}
+.hero-lead{font-size:23px}
+.hero-subtext{font-size:15px;color:#b5c2d8}
+.hero-meta{font-size:11px}
+.hero-panel{background:linear-gradient(150deg,rgba(29,44,72,.9),rgba(13,23,41,.96));border-color:rgba(163,185,235,.2)}
+.metric small{font-size:11.5px;color:#b0bfd8}
+.intro-section,.experience-section,.projects-section,.skills-section,.recommendations-section,.education-section{
+  background:#0b1424;
+  color:#eaf0fb;
+}
+.intro-section{background:radial-gradient(ellipse at 90% 15%,rgba(73,97,159,.09),transparent 36%),#0b1424}
+.experience-section,.skills-section,.education-section{background:#0e192b}
+.projects-section,.recommendations-section{background:#091221}
+.section-kicker{color:#99a9c5}
+.section-number,.card-overline,.recommendation-type{color:#9db4ff}
+.section-aside{color:#a0aec4;font-size:13px}
+.intro-content h2,.section-title{color:#f2f5fc}
+.intro-content h2 span,.section-title span{color:#9db4ff}
+.intro-large{color:#dce5f5;font-size:22px;line-height:1.55}
+.intro-details{color:#aebbd0;font-size:15px;line-height:1.9}
+.about-tags span,.tag-list span{
+  border-color:#34435e;background:rgba(255,255,255,.035);color:#c1cce0;
+  border-radius:999px;padding:7px 12px;font-size:10px;
+}
+.experience-card{color:#e9effa}
+.experience-rail .rail-dot{border-color:#0e192b;background:#9db4ff;box-shadow:0 0 0 1px #9db4ff}
+.rail-line{background:#31405a}
+.experience-top h3,.project-heading h3{color:#f1f5fc}
+.company{color:#b4c0d3;font-size:15px}
+.date-chip{border-color:#3a4a67;background:rgba(255,255,255,.035);color:#b5c3da;border-radius:999px;font-size:10px}
+.experience-summary,.achievement p{color:#b3bfd2;font-size:14px;line-height:1.8}
+.achievement-icon{background:#1a2b4b;color:#a8bcff}
+.achievement strong{font-size:15px;color:#edf2fc}
+.project-card{
+  background:#121f34;border-color:#2a3a56;border-radius:17px;
+  box-shadow:0 18px 60px rgba(0,0,0,.14);
+}
+.project-content{color:#eaf0fb}
+.project-heading h3{font-size:34px}
+.project-number{color:#8191ad}
+.project-description{color:#d0daeb;font-size:16px;line-height:1.75}
+.project-points{color:#b9c5d9;font-size:14px;line-height:1.85}
+.project-points li::marker{color:#9eb4ff}
+.project-content .tag-list span{background:#192944;border-color:#344867;color:#c4d1e8}
+.project-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:23px}
+.project-link{display:inline-flex;align-items:center;gap:12px;padding:9px 13px;border:1px solid #51668f;border-radius:999px;color:#dfe8fb;background:rgba(125,153,221,.1);font-size:12px;font-weight:800}
+.project-link:hover{background:rgba(125,153,221,.2);border-color:#9cb4ff;color:#fff}
+.project-link-muted{border-color:#3a4a65;background:rgba(255,255,255,.035);color:#bcc9de}
+.private-mark{padding:2px 6px;border-radius:999px;background:#4a3a28;color:#f2c98d;font:9px var(--mono);letter-spacing:.5px}
+.visual-audiosphere{
+  background:radial-gradient(circle at 50% 45%,rgba(85,115,207,.3),transparent 35%),linear-gradient(145deg,#0e1a31,#172d4a);
+}
+.audio-visual-shell{
+  position:relative;z-index:1;width:78%;max-width:380px;padding:18px 20px 16px;
+  border:1px solid rgba(184,207,255,.2);border-radius:18px;
+  background:linear-gradient(145deg,rgba(24,42,71,.94),rgba(9,18,34,.96));
+  box-shadow:0 25px 70px rgba(0,0,0,.4);transform:rotate(-3deg);
+}
+.audio-visual-top{display:flex;justify-content:space-between;color:#8ea6d4;font:9px var(--mono);letter-spacing:1px}
+.audio-disc-stage{position:relative;display:grid;place-items:center;height:190px;overflow:hidden}
+.audio-disc{
+  position:relative;z-index:2;width:157px;height:157px;border-radius:50%;
+  background:repeating-radial-gradient(circle at center,#111827 0 4px,#202f49 5px 7px,#111827 8px 10px);
+  border:1px solid rgba(198,215,255,.3);box-shadow:0 12px 40px rgba(0,0,0,.5),0 0 35px rgba(111,145,226,.2);
+  animation:disc-spin 18s linear infinite;
+}
+.audio-disc:before{content:"";position:absolute;inset:17px;border:1px solid rgba(177,197,245,.18);border-radius:50%}
+.audio-disc-label{position:absolute;inset:53px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(145deg,#a9bdff,#536fae);color:#101a2c;font:700 20px var(--display)}
+.audio-disc-label i{position:absolute;width:5px;height:5px;border-radius:50%;background:#0b1424}
+.audio-glow{position:absolute;width:190px;height:190px;border-radius:50%;background:rgba(105,139,230,.22);filter:blur(36px)}
+@keyframes disc-spin{to{transform:rotate(360deg)}}
+.audio-equalizer{height:34px;display:flex;align-items:center;justify-content:center;gap:5px}
+.audio-equalizer i{width:4px;height:var(--bar,14px);border-radius:5px;background:linear-gradient(180deg,#a8c0ff,#667fc4);opacity:.9}
+.audio-equalizer i:nth-child(3n){--bar:26px}.audio-equalizer i:nth-child(4n){--bar:10px}.audio-equalizer i:nth-child(5n){--bar:21px}.audio-equalizer i:nth-child(7n){--bar:30px}
+.audio-visual-track{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:13px;padding-top:14px;border-top:1px solid rgba(184,207,255,.13)}
+.audio-visual-track div{display:grid;gap:3px}
+.audio-visual-track small{color:#8ea6d4;font:8px var(--mono);letter-spacing:.8px}
+.audio-visual-track strong{color:#edf3ff;font:600 14px var(--display)}
+.audio-visual-track>span{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#9eb7ff;color:#101a2c;font-size:17px}
+.visual-audiosphere .visual-label{color:#9fb4d8}
+.visual-voyagr{background:linear-gradient(145deg,#101f36,#1a3651)}
+.voyagr-map{background:radial-gradient(circle at 50% 50%,rgba(93,127,191,.12),transparent 58%)}
+.skills-intro .section-title{color:#edf2fc}
+.skills-intro>p{color:#b4c0d4;font-size:15px;line-height:1.9}
+.skills-list{border-color:#2d3d58}
+.skill-row{border-color:#2d3d58}
+.skill-row h3{color:#eaf0fb;font-size:17px}
+.skill-row p{color:#b3bfd2;font-size:14px}
+.skill-index,.skill-symbol{color:#9db4ff}
+.recommendations-section .section-title{color:#eef3fc}
+.recommendation-card{
+  background:#14223a;border-color:#2e405e;border-radius:16px;
+  box-shadow:0 15px 48px rgba(0,0,0,.13);
+}
+.recommendation-featured{background:#1a2b49;border-color:#40577e}
+.recommendation-source{color:#aab8ce;font-size:12px}
+.recommendation-card blockquote{color:#c4d0e2;font-size:14px;line-height:1.9}
+.recommendation-featured blockquote{color:#d5e0f1}
+.recommendation-footer{border-color:#31415c}
+.recommendation-featured .recommendation-footer{border-color:#405371}
+.recommendation-footer strong{color:#eff4fc;font-size:13px}
+.recommendation-footer small{color:#aab8ce;font-size:11px}
+.avatar-initial{background:#273b61;color:#c2d2ff}
+.avatar-alt{background:#344766;color:#d2def8}
+.quote-mark{color:#8299ce}
+.recommendation-featured .quote-mark{color:#92a9df}
+.recommendation-note{color:#9eacc1;font-size:12px}
+.education-heading h2{color:#eef3fc}
+.education-heading>div:first-child>p:last-child{color:#b1bfd3;font-size:15px}
+.cpi{background:#172641;border-color:#3b5279}
+.cpi strong{color:#b0c3ff}
+.cpi span{color:#a5b5ce}
+.education-achievements div{border-color:#33435e}
+.education-achievements span{color:#a2b1c8;font-size:10px}
+.education-achievements strong{color:#e9effa;font-size:18px}
+.contact-section{background:radial-gradient(ellipse at 78% 10%,rgba(72,104,187,.22),transparent 36%),linear-gradient(125deg,#080e1b,#142441)}
+.contact-wrap>p{font-size:15px;color:#c0cce0}
+.contact-bottom{border-color:rgba(185,204,243,.18);color:#aab8d0;font-size:10px}
+.site-footer{background:#070c16;color:#9ba9c0}
+.footer-inner a{color:#b6c8ef}
+.button{border-radius:999px;font-size:13px;padding:0 21px}
+.button-primary{background:#a3b8ff;color:#0c1425}
+.button-primary:hover{background:#c0ceff}
+.button-ghost{border-color:#536789;color:#e6edfb;background:rgba(255,255,255,.035)}
+.button-ghost:hover{border-color:#9eb5ff;background:rgba(155,180,255,.1)}
+.nav-contact{border-radius:999px}
+.brand-dot{color:#a7bcff}
+@media(max-width:760px){
+  .nav-links{background:#121f35;border-color:#344563}
+  .hero-lead{font-size:21px}
+  .intro-large{font-size:19px}
+  .intro-details{font-size:14px}
+  .project-content{padding:30px 25px}
+  .project-points{font-size:13.5px}
+  .recommendation-card blockquote{font-size:13.5px}
+}
+@media(max-width:430px){
+  .audio-visual-shell{width:86%;padding:15px}
+  .audio-disc-stage{height:165px}
+  .audio-disc{width:137px;height:137px}
+  .audio-disc-label{inset:46px}
+}
+@media(prefers-reduced-motion:reduce){.audio-disc{animation:none}}
