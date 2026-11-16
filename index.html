@@ -12,7 +12,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Nunito+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/script.js"></script>
 </head>
@@ -27,6 +27,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#recommendations">Recommendations</a>
+        <a href="https://www.linkedin.com/in/aaditya-p-06577432a/" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
@@ -62,7 +63,7 @@
             <div class="metric"><strong>99.7<span>%</span></strong><small>Efficiency gain in a compliance workflow</small></div>
             <div class="metric"><strong>40<span>%</span></strong><small>API latency reduction in Voyagr</small></div>
             <div class="metric"><strong>500</strong><small>Concurrent users supported</small></div>
-            <div class="metric"><strong>&lt;2<span>s</span></strong><small>Meal-plan response time in Optimeal</small></div>
+            <div class="metric"><strong>YT</strong><small>YouTube-powered music playback in AudioSphere</small></div>
           </div>
           <div class="panel-footer"><span>PYTHON · FASTAPI · AI</span><span class="panel-pulse"></span></div>
         </aside>
@@ -113,16 +114,35 @@
           <p class="section-aside">A selection of products<br />and engineering projects.</p>
         </div>
 
-        <article class="project-card project-optimeal reveal">
-          <div class="project-visual visual-optimeal" aria-hidden="true">
-            <div class="visual-window"><div class="window-bar"><i></i><i></i><i></i><span>optimeal / dashboard</span></div><div class="visual-dashboard"><div class="visual-greeting">Your week, in balance.</div><div class="visual-chart"><span style="height:38%"></span><span style="height:55%"></span><span style="height:45%"></span><span style="height:72%"></span><span style="height:61%"></span><span style="height:88%"></span><span style="height:68%"></span></div><div class="visual-bottom"><div><small>DAILY TARGET</small><b>1,850 <em>kcal</em></b></div><div class="visual-ring"><span>82%</span></div></div></div></div>
-            <span class="visual-label">01 / PRODUCT</span>
+        <article class="project-card project-audiosphere reveal">
+          <div class="project-visual visual-audiosphere" aria-hidden="true">
+            <div class="audio-visual-shell">
+              <div class="audio-visual-top"><span>NOW PLAYING</span><span>AS / 001</span></div>
+              <div class="audio-disc-stage">
+                <div class="audio-disc"><div class="audio-disc-label"><span>AS</span><i></i></div></div>
+                <div class="audio-glow"></div>
+              </div>
+              <div class="audio-equalizer" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="audio-visual-track"><div><small>YOUR MUSIC. YOUR SPACE.</small><strong>Find your next favourite.</strong></div><span>♫</span></div>
+            </div>
+            <span class="visual-label">01 / MUSIC PLATFORM</span>
           </div>
           <div class="project-content">
-            <div class="project-heading"><div><p class="card-overline">FULL-STACK · APPLIED AI</p><h3>Optimeal</h3></div><span class="project-number">01</span></div>
-            <p class="project-description">An AI-driven health and financial tracking platform designed to make everyday meal planning more personal, practical, and budget-aware.</p>
-            <ul class="project-points"><li>Built a full-stack platform with React, FastAPI, and PostgreSQL, including authentication and multi-currency dashboards.</li><li>Integrated Gemini 2.5 Flash to generate personalized meal plans around budget and dietary constraints, with sub-2-second responses for complex nutritional calculations.</li><li>Prototyped semantic retrieval with vector embeddings to ground recommendations in menu data, and deployed the PWA through a Vercel/Render monorepo CI/CD pipeline.</li></ul>
-            <div class="tag-list"><span>React.js</span><span>FastAPI</span><span>PostgreSQL</span><span>Python</span><span>Gemini 2.5 Flash</span><span>RAG prototype</span></div>
+            <div class="project-heading"><div><p class="card-overline">FULL-STACK · MUSIC DISCOVERY</p><h3>AudioSphere</h3></div><span class="project-number">01</span></div>
+            <p class="project-description">A full-stack music listening and discovery experience built around a personal YouTube music library, enriched track information, and recommendations shaped by listening preferences.</p>
+            <ul class="project-points">
+              <li>Built a React and TypeScript music interface with a saved-track library, YouTube playback, sequential and shuffle queues, seek controls, and volume management.</li>
+              <li>Integrated track enrichment using iTunes Search and LRCLIB to retrieve artwork, genre, release year, and lyrics for the listening experience.</li>
+              <li>Implemented a FastAPI recommendation service that analyses saved-track genre and artist signals, removes already-saved tracks, ranks candidates, and supports genre-focused discovery.</li>
+              <li>Developed a Spring Boot Java backend with PostgreSQL and Spring Data JPA for authenticated, user-scoped playlist management, and connected it to the Python recommendation service.</li>
+            </ul>
+            <div class="tag-list"><span>React 19</span><span>TypeScript</span><span>FastAPI</span><span>Python</span><span>Spring Boot</span><span>PostgreSQL</span><span>OAuth2 / JWT</span></div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/AadityaPala/AudioSphere" target="_blank" rel="noopener">Main application <span aria-hidden="true">↗</span></a>
+              <a class="project-link project-link-muted" href="https://github.com/AadityaPala/AudioSphere-Java" target="_blank" rel="noopener">Java backend <span class="private-mark">PRIVATE</span><span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </article>
 
@@ -170,7 +190,7 @@
             <div class="recommendation-footer"><span class="avatar-initial avatar-alt">W</span><div><strong>Wells Fargo colleague</strong><small>Summer internship recommendation</small></div><span class="quote-arrow">↗</span></div>
           </figure>
         </div>
-        <p class="recommendation-note">Recommendations are reproduced from the text provided. Recommender names and original LinkedIn URLs were not supplied.</p>
+        <p class="recommendation-note">Recommendations are reproduced from the text provided. Individual recommender profile links were not supplied.</p>
       </div>
     </section>
 
@@ -189,8 +209,8 @@
         <div class="section-kicker light-eyebrow"><span class="section-number">LET’S CONNECT</span><span>OPEN TO GOOD CONVERSATIONS</span></div>
         <h2>Have a problem<br />worth <span>solving?</span></h2>
         <p>I’m preparing for SDE internship opportunities and enjoy connecting with people building thoughtful products and reliable systems.</p>
-        <div class="contact-actions"><a class="button button-primary" href="mailto:aaditya.v.pala@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="https://github.com/AadityaPala" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a></div>
-        <div class="contact-bottom"><a href="mailto:aaditya.v.pala@gmail.com">aaditya.v.pala@gmail.com</a><span>GANDHINAGAR, INDIA</span><a href="#top">BACK TO TOP ↑</a></div>
+        <div class="contact-actions"><a class="button button-primary" href="mailto:aaditya.v.pala@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="https://www.linkedin.com/in/aaditya-p-06577432a/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="https://github.com/AadityaPala" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a></div>
+        <div class="contact-bottom"><a href="mailto:aaditya.v.pala@gmail.com">aaditya.v.pala@gmail.com</a><a href="https://www.linkedin.com/in/aaditya-p-06577432a/" target="_blank" rel="noopener">LINKEDIN ↗</a><span>GANDHINAGAR, INDIA</span><a href="#top">BACK TO TOP ↑</a></div>
       </div>
     </section>
   </main>
