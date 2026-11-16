@@ -312,3 +312,68 @@ main,section{color:var(--text-primary)}
 .avatar-initial::before{content:"";position:absolute;top:6px;left:50%;width:9px;height:9px;transform:translateX(-50%);border-radius:50%;background:#c7d6ff}
 .avatar-initial::after{content:"";position:absolute;bottom:4px;left:50%;width:19px;height:11px;transform:translateX(-50%);border-radius:11px 11px 5px 5px;background:#c7d6ff}
 .avatar-alt::before,.avatar-alt::after{background:#d5e1f8}
+
+
+/* LinkedIn recommendation identity rows and portrait treatments */
+.recommendation-profile{
+  display:flex;align-items:flex-start;gap:15px;padding-right:36px;
+}
+.recommendation-avatar{
+  display:block;flex:0 0 60px;width:60px;height:60px;object-fit:cover;
+  border-radius:50%;border:1px solid rgba(183,201,241,.42);
+  background:#1a2a45;box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+.recommendation-identity{min-width:0;display:grid;gap:4px}
+.recommendation-name-line{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
+.recommendation-name{
+  display:inline;color:#f1f5fc;font:600 17px/1.25 "Outfit",sans-serif;
+  text-decoration:none;
+}
+a.recommendation-name:hover{color:#b9caff}
+.external-mark{font:11px var(--mono);color:#9fb5ed}
+.recommendation-verified{
+  display:inline-grid;place-items:center;width:15px;height:15px;
+  border:1px solid #8099d2;border-radius:50%;color:#b8caff;
+  font:700 9px var(--sans);
+}
+.recommendation-connection{
+  color:#9baac1;font-size:11px;line-height:1.2
+}
+.recommendation-role{
+  margin:0;color:#c3cee0;font-size:12px;line-height:1.5;font-weight:600
+}
+.recommendation-date{
+  margin:0;color:#99a9c0;font-size:11px;line-height:1.45
+}
+.recommendation-card blockquote{
+  margin:24px 0 25px;color:#c9d4e6;font-size:14px;line-height:1.85
+}
+.recommendation-featured blockquote{color:#d3deee}
+.recommendation-footer{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  margin-top:auto;padding-top:17px;border-top:1px solid var(--surface-border-soft);
+  color:#9eacc2;font-size:11px
+}
+.recommendation-footer a{
+  display:inline-flex;align-items:center;gap:7px;color:#b7c9ff;
+  font-size:11px;font-weight:800;text-decoration:none
+}
+.recommendation-footer a:hover{color:#fff}
+.public-mark{
+  padding:2px 7px;border-radius:999px;border:1px solid rgba(117,205,165,.3);
+  background:rgba(67,154,117,.13);color:#9be1bd;font:9px var(--mono);
+  letter-spacing:.5px
+}
+@media(max-width:760px){
+  .recommendation-profile{gap:12px;padding-right:20px}
+  .recommendation-avatar{width:52px;height:52px;flex-basis:52px}
+  .recommendation-name{font-size:16px}
+  .recommendation-role{font-size:11px}
+  .recommendation-date{font-size:10px}
+  .recommendation-card blockquote{font-size:13.5px}
+}
+@media(max-width:430px){
+  .recommendation-profile{gap:10px}
+  .recommendation-avatar{width:48px;height:48px;flex-basis:48px}
+  .recommendation-footer{align-items:flex-start;flex-direction:column}
+}
