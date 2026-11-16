@@ -306,3 +306,9 @@ main,section{color:var(--text-primary)}
   .education-content{padding:20px 16px}
   .metric{padding:11px}
 }
+
+/* Do not imply unverified recommender initials; use neutral profile placeholders. */
+.avatar-initial{position:relative;overflow:hidden;flex:0 0 34px}
+.avatar-initial::before{content:"";position:absolute;top:6px;left:50%;width:9px;height:9px;transform:translateX(-50%);border-radius:50%;background:#c7d6ff}
+.avatar-initial::after{content:"";position:absolute;bottom:4px;left:50%;width:19px;height:11px;transform:translateX(-50%);border-radius:11px 11px 5px 5px;background:#c7d6ff}
+.avatar-alt::before,.avatar-alt::after{background:#d5e1f8}
